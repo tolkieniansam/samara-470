@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Calculator</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<div class="box">
+<form name="calc">
+<tr>
+	<td>
+		<label>Enter your value :</label>
+		<input type="text" name="input">
+	</td>
+</tr>
+<br>
+
+<div class="btn">
+	<tr>
+	<td>
+		<input type="button" name="one" value="1" onClick="calc.input.value +='1'">
+		<input type="button" name="two" value="2" onClick="calc.input.value +='2'">
+		<input type="button" name="three" value="3" onClick="calc.input.value +='3'">
+		<input type="button" name="plus" value="+" onClick="calc.input.value +='+'">
+		<br>
+		<input type="button" name="four" value="4" onClick="calc.input.value +='4'">
+		<input type="button" name="five" value="5" onClick="calc.input.value +='5'">
+		<input type="button" name="six" value="6" onClick="calc.input.value +='6'">
+		<input type="button" name="minus" value="-" onClick="calc.input.value +='-'">
+		<br>
+		<input type="button" name="seven" value="7" onClick="calc.input.value +='7'">
+		<input type="button" name="eight" value="8" onClick="calc.input.value +='8'">
+		<input type="button" name="nine" value="9" onClick="calc.input.value +='9'">
+		<input type="button" name="multi" value="*" onClick="calc.input.value +='*'">
+		<br>
+		<INPUT type="button" name="clear" value="  c  " onClick="calc.input.value = ''">
+		<input type="button" name="zero" value="0" onClick="calc.input.value +='0'">
+		<input type="button" name="result" value="=" onClick="calc.input.value =eval(calc.input.value)">
+		<input type="button" name="divide" value="/" onClick="calc.input.value +='/'">
+		<br>
+		<input type="button" name="sqrt" value="sqrt" onClick="calc.input.value =Math.sqrt(calc.input.value)">
+		
+	</td>
+</tr>
+</div>
+</div>
+
+</form>
+</body>
+</html>
